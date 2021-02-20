@@ -21,7 +21,6 @@ using Oqtane.Repository;
 using Oqtane.Security;
 using Oqtane.Services;
 using Oqtane.Shared;
-using Oqtane.UI;
 
 namespace Oqtane
 {
@@ -128,6 +127,7 @@ namespace Oqtane
             services.AddScoped<ISiteTemplateService, SiteTemplateService>();
             services.AddScoped<ISqlService, SqlService>();
             services.AddScoped<ISystemService, SystemService>();
+            services.AddScoped<ILocalizationService, LocalizationService>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
